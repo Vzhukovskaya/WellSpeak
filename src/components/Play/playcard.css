@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Serif+Display:ital@0;1&display=swap');
+
+.parent-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 10000px;
+}
+
+.word-card {
+    font-family: 'DM Serif Display', serif;
+    position: relative;
+    background-color: rgba(176, 193, 208, 0.725);
+    border: 1px solid rgba(176, 193, 208, 0.725);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+
+    transition: 0.7s;
+    cursor: pointer;
+
+}
+
+.word-card:hover {
+    background-color: #31a6bb;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.word-card.flip {
+    transform: rotateY(180deg);
+}
+
+.english {
+    font-family: 'Arvo', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #181b63;
+}
+
+.russian {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.297);
+}
+
+.english::first-letter,
+.russian::first-letter {
+    text-transform: uppercase;
+}
+
+.transcription {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #181b63;
+    ;
+    text-shadow: none;
+
+}
+
+.front,
+.back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.word-card.flipped {
+    transform: rotateY(180deg) scale(-1, 1);
+}
+
+.word-card.flipped .front {
+    transform: rotateY(-180deg);
+}
+
+.word-card.flipped .back {
+    transform: rotateY(0deg);
+}

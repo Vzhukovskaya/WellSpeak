@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Serif+Display:ital@0;1&display=swap');
+
+.motion-content {
+    display: flex;
+    align-items: center;
+    margin: 40px auto 0;
+    max-width: 650px;
+}
+
+.buttons {
+    display: flex;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 50px 0 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.motion-content .prev {
+    font-size: 40px;
+    transform: rotate(180deg);
+    color: #181b63;
+}
+
+.motion-content .next {
+    font-size: 40px;
+    color: #181b63;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: #181b63;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.prev:disabled,
+.next:disabled {
+    opacity: 0.0;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.quantity-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin: 20px 0 40px auto;
+    padding-left: 40px;
+}
+
+.quantity-slider-info {
+    display: block;
+    font-family: 'Arvo', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}

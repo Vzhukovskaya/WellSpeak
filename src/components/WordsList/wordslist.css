@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Serif:ital,wght@1,400;1,700&display=swap');
+
+table {
+    width: 99%;
+    margin: 20px 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.change-button,
+.delete-button,
+.save-button,
+.cancel-button {
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 2px 20px;
+    margin: 5px;
+    border-radius: 30px;
+
+    background-color: #31a6bb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='text'] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.th {
+    font-family: 'Indie Flower', cursive;
+}
