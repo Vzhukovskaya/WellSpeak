@@ -52,6 +52,10 @@ function Motion({ data, disableFirstAndLast, defaultIndex }) {
 
     return (
         <div className="motion">
+            <div className="motion-instructions">
+                <p>Here you can start learning words with flashcards, good luck!</p>
+                <p>Just click on card - to test your word knowledge</p>
+            </div>
             <div className={`motion-content ${slideDirection}`}>
                 <button
                     className="prev"

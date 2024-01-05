@@ -29,9 +29,10 @@
 }
 
 .footer-container a {
+    color: #E5E5E5;
     text-decoration: none;
 }
 
-.footer-container nav li:hover {
+.footer-container a:hover {
     color: #181b63;
 }

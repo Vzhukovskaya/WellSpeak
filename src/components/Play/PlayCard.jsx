@@ -9,7 +9,6 @@ function PlayCard({ english, transcription, russian, showInfo }) {
     };
     return (
         <div className="parent-element" id="motion-card">
-            <p className="card-title"></p>
             <div className={`word-card ${flipped ? " flipped" : ""}`} title="Нажмите на карточку, чтобы увидеть перевод"
                 onClick={handleFlip}>
                 <div className="front">

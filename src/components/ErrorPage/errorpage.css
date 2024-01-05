@@ -1,0 +1,33 @@
+.error-page {
+    background-color: #E5E5E5;
+}
+
+.error-page img {
+    width: 80vh;
+    left: 700px;
+    position: relative;
+}
+
+.error-page h1 {
+    font-family: 'Arvo', serif;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 500;
+    width: 800px;
+    text-align: center;
+    top: 250px;
+    left: 300px;
+    z-index: 1;
+    color: #181b63;
+}
+
+.error-page p {
+    font-family: 'DM Serif Display', serif;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 900;
+    top: 280px;
+    left: 630px;
+    z-index: 1;
+    color: #181b63;
+}
