@@ -5,18 +5,6 @@ import { Link } from 'react-router-dom';
 
 
 function Header() {
-    const handleClick = (event, id) => {
-        event.preventDefault();
-        const elem = document.querySelector(id);
-
-        if (elem) {
-            window.scroll({
-                top: elem.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    };
-
     return (
         <header className="header-container">
             <Link to="/">
@@ -29,7 +17,7 @@ function Header() {
                 <ul>
                     <li><Link to='/'>Main</Link></li>
                     <li><Link to='/motion'>Card Game</Link></li>
-                    <li><Link to='/foruse' onClick={(e) => handleClick(e, '#office')}>Office</Link></li>
+                    <li><Link to='*'>Office</Link></li>
                 </ul>
             </nav>
             <button className="logout-button">Log out</button>
