@@ -1,6 +1,18 @@
 
 # WellSpeak
 
+[![GitHub license](https://img.shields.io/github/license/Vzhukovskaya/WellSpeak.React.svg)](https://github.com/Vzhukovskaya/WellSpeak.React/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/Vzhukovskaya/WellSpeak.React.svg)](https://GitHub.com/Vzhukovskaya/WellSpeak.React/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/Vzhukovskaya/WellSpeak.React.svg)](https://GitHub.com/Vzhukovskaya/WellSpeak.React/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/Vzhukovskaya/WellSpeak.React.svg)](https://GitHub.com/Vzhukovskaya/WellSpeak.React/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![GitHub watchers](https://img.shields.io/github/watchers/Vzhukovskaya/WellSpeak.React.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Vzhukovskaya/WellSpeak.React/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/Vzhukovskaya/WellSpeak.React.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Vzhukovskaya/WellSpeak.React/network/)
+[![GitHub stars](https://img.shields.io/github/stars/Vzhukovskaya/WellSpeak.React.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Vzhukovskaya/WellSpeak.React/stargazers/)
+
+[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/Vzhukovskaya/WellSpeak.React)
+
 ## Description
 WellSpeak is an innovative application designed to enhance language learning and speaking skills. Using advanced speech recognition and interactive exercises, it offers users a unique and effective way to practice and improve their language proficiency.
 
