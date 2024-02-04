@@ -1,0 +1,11 @@
+.instructions {
+    width: 900px;
+    margin: 40px auto;
+}
+
+.instructions p {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    color: #181b63;
+    text-align: center;
+}

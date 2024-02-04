@@ -1,22 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './playcard.css';
 
-function PlayCard({ english, transcription, russian, showInfo }) {
+function PlayCard({ english, transcription, russian, showInfo, incrementWordsLearned, wordsLearned }) {
     const [flipped, setFlipped] = useState(false);
-    const [wordsLearned, setWordsLearned] = useState(0); // Счетчик изученных слов
     const viewTranslationButtonRef = useRef(null);
 
     useEffect(() => {
         viewTranslationButtonRef.current.focus();
-    }, []);
+    }, [english, transcription, russian]);
 
     const handleFlip = () => {
         setFlipped(!flipped);
     };
 
     const handleViewTranslationClick = () => {
-        setWordsLearned(prevWordsLearned => prevWordsLearned + 1);
-        handleFlip();
+        incrementWordsLearned();
+        setFlipped(!flipped);
     };
 
     return (
@@ -24,7 +23,7 @@ function PlayCard({ english, transcription, russian, showInfo }) {
 
             <div className="front-element">
                 <button className='translation-btn' ref={viewTranslationButtonRef} onClick={handleViewTranslationClick}>
-                    Click here to mark the word as learned
+                    Click here, to mark as learned
                 </button>
                 <span className="words-learned">Words learned: {wordsLearned}</span>
             </div>
@@ -49,4 +48,4 @@ function PlayCard({ english, transcription, russian, showInfo }) {
     );
 }
 
-export default PlayCard;
+export default React.memo(PlayCard);

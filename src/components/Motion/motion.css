@@ -1,29 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Serif+Display:ital@0;1&display=swap');
 
-.motion-instructions {
-    display: flex;
-    justify-content: space-around;
-}
-
-.motion .motion-instructions p {
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 20px 10px;
-    color: #181b63;
-}
-
 .motion h2 {
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-    width: 400px;
-    font-weight: 400;
-    margin: 100px 160px 0;
-    color: #181b63;
-    text-align: center;
-}
-
-.motion p {
     font-family: 'Arvo', serif;
     font-size: 20px;
     width: 400px;
@@ -37,7 +14,7 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 700px;
 }
 
 .buttons {
@@ -99,7 +76,7 @@ button:focus {
     font-weight: bold;
 
     margin: 20px 0 40px auto;
-    padding-left: 40px;
+
     color: #181b63;
 }
 

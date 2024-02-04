@@ -35,6 +35,7 @@ tr:nth-child(even) {
 
     background-color: #31a6bb;
     color: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(54, 67, 124, 0.3);
     border: none;
     cursor: pointer;
 }

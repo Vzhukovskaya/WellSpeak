@@ -1,12 +1,30 @@
 import React, { useState, useCallback, useEffect } from "react";
 import PlayCard from "../Play/PlayCard";
+import CongratulationsModal from "../Modal/CongratulationsModal";
+import Instruction from "../Instruction/Instruction";
+
 import "./motion.css";
 
 function Motion({ data, disableFirstAndLast, defaultIndex }) {
     const [currentIndex, setCurrentIndex] = useState(defaultIndex || 0);
     const [flipped, setFlipped] = useState(false);
     const [finished, setFinished] = useState(false);
+    const [wordsLearned, setWordsLearned] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [slideDirection, setSlideDirection] = useState("next");
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    const incrementWordsLearned = () => {
+        const newWordsLearned = wordsLearned + 1;
+        setWordsLearned(newWordsLearned);
+
+        if (newWordsLearned === data.length) {
+            setIsModalOpen(true);
+        }
+    };
 
     const handlePrevClick = useCallback(() => {
         setSlideDirection("prev");
@@ -28,8 +46,8 @@ function Motion({ data, disableFirstAndLast, defaultIndex }) {
         } else {
             if (disableFirstAndLast) {
                 setCurrentIndex(0);
-                setFinished(true);
             }
+            setFinished(true);
         }
         setFlipped(false);
     }, [currentIndex, disableFirstAndLast, data]);
@@ -52,11 +70,7 @@ function Motion({ data, disableFirstAndLast, defaultIndex }) {
 
     return (
         <div className="motion">
-            <div className="motion-instructions">
-                <p>Here you can start learning words with flashcards, good luck!</p>
-
-                <p>Just click on card - to test your word knowledge</p>
-            </div>
+            <Instruction />
             <div className={`motion-content ${slideDirection}`}>
                 <button
                     className="prev"
@@ -75,6 +89,8 @@ function Motion({ data, disableFirstAndLast, defaultIndex }) {
                         russian={data[currentIndex].russian}
                         flipped={flipped}
                         setFlipped={setFlipped}
+                        wordsLearned={wordsLearned}
+                        incrementWordsLearned={incrementWordsLearned}
                         showInfo={finished}
                     />
                 ) : (
@@ -92,6 +108,7 @@ function Motion({ data, disableFirstAndLast, defaultIndex }) {
             <div className="quantity-slider">
                 {currentIndex + 1}/{data.length}
             </div>
+            <CongratulationsModal isOpen={isModalOpen} onClose={closeModal} totalWords={data.length} />
         </div>
     );
 }

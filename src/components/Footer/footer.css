@@ -12,6 +12,10 @@
     margin: 0;
 }
 
+.footer-container nav {
+    margin-left: 45px;
+}
+
 .footer-container nav ul {
     display: flex;
     list-style: none;
@@ -22,7 +26,7 @@
 .footer-container nav li {
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
-    padding-right: 50px;
+    padding-right: 60px;
     cursor: pointer;
     color: aliceblue;
     text-decoration: none;

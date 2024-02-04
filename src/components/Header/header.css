@@ -76,6 +76,7 @@
     font-size: 22px;
     background-color: #181b63;
     color: #E5E5E5;
+    box-shadow: 4px 4px 4px 0px rgba(54, 67, 124, 0.3);
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -84,6 +85,7 @@
 .logout-button:hover {
     background-color: #E5E5E5;
     color: #181b63;
+
 }
 
 .header-nav li a:hover {
