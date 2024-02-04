@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/WellSpeak/static/css/main.387bc2df.css",
-    "main.js": "/WellSpeak/static/js/main.e2b37e88.js",
+    "main.css": "/WellSpeak/static/css/main.79b4cd42.css",
+    "main.js": "/WellSpeak/static/js/main.b1c15bc6.js",
     "static/js/787.1dc0886b.chunk.js": "/WellSpeak/static/js/787.1dc0886b.chunk.js",
+    "static/media/modal.bg.jpg": "/WellSpeak/static/media/modal.bg.b74ee745d60658525164.jpg",
     "static/media/logo.png": "/WellSpeak/static/media/logo.d54adcf04664dcf99e0d.png",
     "index.html": "/WellSpeak/index.html",
-    "main.387bc2df.css.map": "/WellSpeak/static/css/main.387bc2df.css.map",
-    "main.e2b37e88.js.map": "/WellSpeak/static/js/main.e2b37e88.js.map",
+    "main.79b4cd42.css.map": "/WellSpeak/static/css/main.79b4cd42.css.map",
+    "main.b1c15bc6.js.map": "/WellSpeak/static/js/main.b1c15bc6.js.map",
     "787.1dc0886b.chunk.js.map": "/WellSpeak/static/js/787.1dc0886b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.387bc2df.css",
-    "static/js/main.e2b37e88.js"
+    "static/css/main.79b4cd42.css",
+    "static/js/main.b1c15bc6.js"
   ]
 }
