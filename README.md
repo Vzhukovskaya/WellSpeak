@@ -3,7 +3,6 @@
 
 [![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/Vzhukovskaya/WellSpeak.React)
 
-## Description
 WellSpeak is an innovative application designed to enhance language learning and speaking skills. Using advanced speech recognition and interactive exercises, it offers users a unique and effective way to practice and improve their language proficiency.
 
 ## Features
